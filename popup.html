@@ -1,0 +1,102 @@
+<!Doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+
+    @font-face
+    {
+        font-family: robot;
+        src:url(font/robot.ttf);
+    }
+
+
+    #main_frame
+    {
+        height: 400px;
+        width: 350px;
+        top: 0px;
+        left: 0px;
+        background-color: black;
+        background-image: url("cat.gif");
+        background-repeat: no-repeat;
+        background-size: 50% 90%;
+        background-position: 0px -100px;
+    }
+
+    .hey{
+      border-style: solid;
+      border-width: 25px;
+      border-color: white;
+    }
+
+    #position_of_image
+    {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%,-20%);
+      /*background-image: url("cat.gif");*/
+      background-size: 100% 100%;
+      height:60%;
+      width:50%;
+    }
+
+
+    </style>
+
+  <link rel="stylesheet" href="font/css/font-awesome.min.css">
+  <script src="./source/jquery.min.js"></script>
+  <script src="./source/materialize.js"></script>
+  <link rel="stylesheet" type="text/css" href="./source/materialize.css">
+  <script src="popup.js"></script>
+  <link rel="stylesheet" type="text/css" href=".//source/mate_icon.css"
+
+  </head>
+  <body>
+    <div id="main_frame">
+
+        <!-- <div id="position_of_image">
+        </div> -->
+        <div class="row">
+          <div class="col s12 center" style="color:white;">
+              <h5> VideoGrapher </h5> <br><br><br><br>
+          </div>
+
+          <div class="col s12 center" id="marquee_container"> <h5> <br>
+            <marquee width="80%" scrollamount="9" style="color:white;" >
+              Ummmm......
+            </marquee> </h5>
+          </div>
+
+          <div class="col 2 offset-s7 center"> <br>
+            <a onClick="get_video_id()"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="col s12"> <br> <br> <br> <br> <br>
+            <div class="col s4 center "> <br>
+               <a href="https://www.facebook.com/rajat.rawat.raajjo" target="_blank"><i class="fa io fa-facebook-official fa-3x tooltipped "  data-position="bottom" data-delay="50" data-tooltip='vxgddfgf' aria-hidden="true" style="color:#3b5998" ></i> </a>
+            </div>
+
+           <div class="col s4 center "> <br>
+             <a href="https://github.com/rajatrawataku1" target="_blank" ><i class="fa fa-github fa-3x" style="color:white" aria-hidden="true"></i>
+             </a>
+           </div>
+
+           <div class="col s4 center"> <br>
+             <a href="https://twitter.com/Swastik_cse" target="_blank" ><i class="fa fa-twitter fa-3x" aria-hidden="true" style="color:#00aced" ></i>
+              </a>
+           </div>
+          </div>
+          <div class="col s12 center" style="color:white;"> <br> <br>
+               Made with Love, Made with Passion
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

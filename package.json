@@ -1,0 +1,21 @@
+{
+  "name": "youtube_coments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "assert": "*",
+    "body-parser": "^1.17.2",
+    "cors": "*",
+    "express": "*",
+    "jsonfile": "^4.0.0",
+    "mongodb": "*",
+    "python-shell": "^0.4.0",
+    "youtube-comment-api": "^3.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
